@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+<div class="wrapper">
+	<header class="rp-main-header">
+	   <img src="logo-realpage.png">
+		<nav>
+			<ul>
+				<li><a href="homePage.html">HOME</a></li>
+				<li><a href="storeLinks.html">KEY LINKS</a></li>
+				<li><a href="repository.html">MY BUSINESS UNIT</a></li>
+				<li><a href="hrDocuments.html">HR - DOCUMENTS</a></li>
+				<li><a href="performance.html">PERFORMANCE</a></li>
+				<li><a href="aboutYou.html">ABOUT YOU</a></li>
+
+			</ul>
+		</nav>
+	</header> 
+	<main>
+		<div class="welcomeHeader" style="position:relative;">
+		<p id="welcomeMsg">REALPAGE WELCOMES YOU...</p>
+		<span class="rp-page-title-tag"><a href="feedback.html">Feedback</a></span>
+		</div>
+		
+		
+		<div class="container">
+		
+			<p id="genericText"><i>RealPage is a leading global provider of software and data analytics to the real estate industry. Clients use our platform to improve 
+			   operating performance and increase capital returns. Founded in 1998 and headquartered in Richardson, Texas, RealPage currently serves
+			   over 12,000 clients worldwide from offices in North America, Europe and Asia. Learn more at <a href="https://www.realpage.com">https://www.realpage.com.</a></i>
+			</p>
+			
+			<div class="middleSection">
+			
+				<div id="left">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/w9P50FHlEiA?autoplay=1">>
+					</iframe>
+				</div>
+				
+				<div id="right">
+					<p class="leaderText" style="margin-top:0px; padding-top:0px; color:#0000d8;"><a href="Org-Chart-Updated.pptx"><b>Know Your Leaders<b></a></p>
+					<p style="font-size: 20px;" class="notificationHead"><b>Events Notification</b></p>
+					<p class="notification br-5"><b>Welcome to Monthly Townhall – A place to meet all your Leaders.... <a id="popup1" href="#" onclick="popup(id);">Learn More<b></a></p>
+					<p class="notification br-5"><b>RPL – RealPage Premiere League, A Great Cricket Carnival – 10 Teams, 1 Winner .... <a id="popup2" href="#" onclick="popup(id);">Learn More<b></a></p>
+					<p class="notification br-5"><b>Family Day – Play, Eat, Drink and Dance with your family and colleagues together .... <a id="popup3" href="#" onclick="popup(id);">Learn More<b></a></p>
+				</div>
+				
+			</div>
+			
+			<div class="activities">
+				<div class="interest">
+					<p>Your Interests</p>
+				</div>
+				<div class="posts">
+					<p class="postHead">NEW POST UP</p>
+					<p>Based on your interest –‘Project Implementation’, we have a perfect course for you in <a href="#">Realpage LinkedIn Program</a>. Go to LinkedIn to learn more</p>
+				</div>
+				<div class="posts">
+					<p class="postHead">NEW POST UP</p>
+					<p>Based on your interest –‘Cricket’, we have a great cricket carnival RPL coming up, You can check them out….<a href="#">Click Here to Learn More</a></p>
+				</div>
+			</div>
+		
+		</div>
+	</main>
+
+	<div id="pop1" class="modal br-5">
+	  <!-- Modal content -->
+	  <div class="modal-content br-5">
+	  <span class="close" onclick="hidePopup()">&times;</span>
+		<div class="popupContent">
+			<p>Don’t Forget to Meet up with your Leaders and catch up to the latest news around your organization in the Townhall Meeting held every month.<p>
+
+			<p><b>Date</b>: 30/04/2020</p>
+
+			<p><b>Time</b>: 4:00 pm to 5:00 pm</p>
+
+			<p><b>Add a reminder to your calendar<b></p>
+
+			<p><b>Note</b>: Don’t forget to collect your snack boxes afterward.</p>
+		</div>
+	  </div>
+
+	</div>
+	
+	<div id="pop2" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content br-5">
+	  
+		<span class="close" onclick="hidePopup()">&times;</span>
+		<div class="popupContent">
+		<p>Welcome to the most exciting time of the year where you can have lots of fun and play with your family & your colleagues together. Make most of the day and cherish each moments. Create memories along the way.<p>
+
+		<p><b>Date</b>: 29th July to 31st July 2020</p>
+
+		<p><b>Time</b>: 7:00 am to 6:00 pm</p>
+
+		<p><b>Venue</b>: Elite Cricket Academy</p>
+		
+		<p><b>Add a reminder to your calendar<b></p>
+
+	  </div>
+
+	</div>
+	</div>
+	
+	<div id="pop3" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content br-5">
+		<span class="close" onclick="hidePopup()">&times;</span>
+		<div class="popupContent">
+		<p>Welcome to the most exciting time of the year where you can have lots of fun and play with your family & your colleagues together. Make most of the day and cherish each moments. Create memories along the way.<p>
+
+		<p><b>Date</b>: 4th November 2020</p>
+
+		<p><b>Time</b>: 9:00 am to 6:00pm</p>
+
+		<p><b>Note</b>: ABC Convention Hall</p>
+		
+		<p><b>Add a reminder to your calendar<b></p>
+	  </div>
+
+	</div>
+	</div>
+	
+</div>
+	
+<script>
+
+var modal, btn, span;
+
+function popup(id){
+console.log(id);
+
+	if(id === "popup1"){
+		// Get the popup
+		 modal = document.getElementById("pop1");
+
+		// Get the button that opens the popup
+		btn = document.getElementById("popup1");
+
+		modal.style.display = "block";
+
+
+		
+	}else if(id === "popup2"){
+		// Get the popup
+		modal = document.getElementById("pop2");
+
+		// Get the button that opens the popup
+		btn = document.getElementById("popup2");
+		 
+		modal.style.display = "block";
+
+	}else{
+		// Get the popup
+		modal = document.getElementById("pop3");
+
+		// Get the button that opens the popup
+		btn = document.getElementById("popup3");
+		
+		modal.style.display = "block";
+
+	}
+	
+}
+		
+	function hidePopup(){
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the popup, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+
+</script>
+
+</body>
+
+</html>

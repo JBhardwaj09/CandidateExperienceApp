@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FeedBack</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="feedbackOption">
+	<h1>DID YOU ENJOY YOUR EXPERIENCE?</h1>
+	<div class="feedbackExp">	
+		<a href="#"><img src="./images/angry.jpg"></a>
+		<a href="#"><img src="./images/sad.jpg"></a>
+		<a href="#"><img src="./images/disappointed.jpg"></a>
+		<a href="#"><img src="./images/happy.jpg"></a>
+		<a href="#"><img src="./images/blissful.jpg"></a>
+	</div>
+	
+	<div class="socialBtns">
+		<button type="button" style="background:#00acee">Share on Twitter</button>
+		<button type="button" style="background:#3b5998 ">Share on Facebook</button>
+		<button type="button" style="background:#0e76a8">Share on LinkedIn</button>
+		<button type="button" style="background:#0CAA41">Glassdoor</button>
+	</div>
+
+	<div class="feedbackInput">
+		<textarea rows="10" cols="35" value="Please Enter your FeedBack (Optional)">
+		</textarea>
+	
+		<button class="submitBtn" type="button" onclick="submit();" style="background:#1589FF">Submit</button>
+	</div>
+</div>
+
+<div class="thankYou" id="feedbackBlock" style="display:none">
+	<p> THANK YOU FOR YOUR FEEDBACK </p>
+</div>
+
+<script>
+
+
+	function submit(){
+		$("#feedbackBlock").show();
+		$(".feedbackOption").hide();
+	}
+</script>
+
+</body>
+</html>

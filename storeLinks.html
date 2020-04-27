@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store Link</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header class="rp-main-header">
+	   <img src="logo-realpage.png">
+		<nav>
+			<ul>
+				<li><a href="homePage.html">HOME</a></li>
+				<li><a href="storeLinks.html">KEY LINKS</a></li>
+				<li><a href="repository.html">MY BUSINESS UNIT</a></li>
+				<li><a href="hrDocuments.html">HR - DOCUMENTS</a></li>
+				<li><a href="performance.html">PERFORMANCE</a></li>
+				<li><a href="aboutYou.html">ABOUT YOU</a></li>
+			</ul>
+		</nav>
+	</header> 
+	<main>
+		<!-- <div class="welcomeHeader"><p id="welcomeMsg">REALPAGE WELCOMES YOU...</p></div> -->
+		
+		<div class="container">
+		
+			<div style="height: 50px;"class="middleSection">
+				<div class="left">
+					<p style="color:white; padding-left:3px;"><b>RealPage Key Links</b><p>
+				</div>
+				<div class="right">
+					<div class="searchRt">
+					  <input type="text" name="search" class="round" value="Search" />
+					</div>
+				</div>
+			</div>
+			
+				<button class="accordion" style="margin-top:40px;"><b>General & L&D</b></button>
+				<div class="panel">
+					<div class="portals">
+						<a href="#" class="portal">
+							<img src="./images/orbs.jpg" alt="Realpage Portal" width="80" height="80" style="padding:20px 0px 0px 40px;">
+							<p style="margin-left:15px; color:black;"><b>REALPAGE PORTAL</b></p>
+						</a>
+						<a href="https://realpage.sharepoint.com/sites/Yieldstar/SitePages/Home.aspx" target="_blank" class="portal">
+							<img src="./images/myRealPage.jpg" alt="RealPage Sharepoint" style="margin:30px 0px 10px 15px;">
+							<p style="margin-left:40px; color:black;"><b>REALPAGE SHAREPOINT</b></p>
+						</a>
+						<a href="" class="portal">
+							<img src="./images/myRealPage.jpg" alt="RealPage University" style="margin:30px 0px 10px 15px;">
+							<p style="margin-left:40px; color:black;"><b>REALPAGE UNIVERSITY</b></p>
+						</a>
+						<a href="" class="portal">
+							<img src="./images/wiki.jpg" alt="RealPage WIki" style="margin:0px 0px 0px 15px;">
+							<p style="margin-left:30px; color:black;"><b>REALPAGE WIKI</b></p>
+						</a>
+					</div>
+				</div>
+			
+				<button class="accordion" style="margin-top:10px;"><b>Performance & Compensation</b></button>
+				<div class="panel">
+					<div class="portals">
+						<a href="" class="portal">
+							<img src="./images/adp.jpg" alt="ADP Portal" width="80" height="80" style="padding:20px 0px 0px 40px;">
+							<p style="margin-left:45px; color:black;"><b>PAYROLL</b></p>
+						</a>
+						<a href="" class="portal">
+							<img src="./images/ultipro.jpg" alt="RealPage UltiPro" style="margin:10px 0px 0px 40px;">
+							<p style="margin-left:50px; color:black;"><b>ULTIPRO</b></p>
+						</a>
+					</div>				
+				</div>
+				
+				<button class="accordion" style="margin-top:10px;"><b>Policy</b></button>
+				<div class="panel">
+					<a href="" class="portals">
+						<div class="portal">
+							<img src="./images/leavePortal.jpg" alt="Realpage Leave Portal" width="80" height="80" style="padding:20px 0px 0px 40px;">
+							<p style="margin-left:40px; color:black;"><b>LEAVE PORTAL</b></p>
+					</a>
+					<a href="" class="portal">
+						<img src="./images/mediBuddy.jpg" alt="RealPage Medical Insurance Portal" style="margin:20px 0px 17px 0px;">
+						<p style="margin-left:50px; color:black;"><b>MEDICAL INSURANCE</b></p>
+				    </a>
+					</div>				
+				</div>
+	
+				<button class="accordion" style="margin-top:10px;"><b>IT</b></button>
+				<div class="panel">
+					<div>
+						<img src="">
+						<p></p>
+					</div>	
+				</div>
+				
+				<button class="accordion" style="margin-top:10px;"><b>Benefits</b></button>
+				<div class="panel">
+					<div>
+						<img src="">
+						<p></p>
+					</div>	
+				</div>
+		</div>
+	
+		
+	</main>
+</div>
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	font-family: sans-serif;
+	background-image: url("employer.jpg");
+	height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+#leftHalf {
+   background-image: url("employer.jpg");
+   width: 50%;
+   position: absolute;
+   left: 0px;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#rightHalf {
+   background-image: url("right.jpg");
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#form-wrapper {     
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -150px;     
+}
+
+.button {
+  background-color: #1589FF; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 15px 32px 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+
+	<div id="form-wrapper">
+			
+		<p style="color:white; font-size: 30px; text-align: center"><b>I am an Employee</b></p>
+			
+		<form action="homePage.html">
+		  <label for="uname"><b>Username</b></label>
+		  <input type="text" placeholder="Enter Username" name="uname" required>
+
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psw" required>
+		  
+		  <div>
+			<input type="submit" class="button" value="Login"/>
+		  </div>
+		  
+		  <div style="margin-left: 10px; display:none;">
+			  <label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			  </label>
+			  <label style="margin-left: 20px">
+				<span><a href="#"> Forgot password?</a></span>
+			  </label>
+		  </div>
+		</form>
+
+	</div>
+
+<script>
+/*
+	function send(){
+		window.location.href = "homePage.html";
+	}
+*/
+</script>
+
+</body>
+</html>

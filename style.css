@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+header img {
+    height: 80px;
+	margin-left: 20px;
+}
+
+body {
+     //height: 125vh;
+    // background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    // background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    //margin-top: 80px;
+	padding: 25px;
+}
+.wrapper{padding: 65px 0;}
+main {
+    color: white;
+}
+
+.br-5 {
+	border-radius: 5px;
+}
+
+.br-10 {
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.rp-main-header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+	display: flex;
+    align-items: center;
+	box-shadow: 0 0 25px 0 black;
+	z-index: 99;
+	
+}
+
+.rp-main-header li a:hover,
+.rp-main-header li a:focus,
+.rp-main-header li a:active{
+	background-color:rgba(0,0,0,0.12)
+}
+
+.rp-main-header * {
+    display: inline;
+}
+
+.rp-main-header li {
+    margin: 20px;
+}
+
+.rp-main-header li a {
+    color: black;
+    text-decoration: none;
+	//font-weight: bold;
+	//padding: 5px;
+}
+
+.welcomeHeader{
+	color: white;
+	background-color: #FF7F50;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+#welcomeMsg{
+	padding: 5px;
+}
+
+.rp-page-title-tag {
+	position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 30px;
+    color: #000;
+    padding: 0.75em;
+    border: 1px solid #FF7F50;
+    border-top-right-radius: 0px;
+    transform: translateY(-25%);
+    border-bottom-right-radius: 0px;
+}
+
+.container{
+	color:black;
+}
+
+.middleSection {
+  display: flex;
+  height: 350px;
+}
+
+#left{
+  float:left;
+  padding: 5px;
+  width: 60%;
+}
+
+#right{
+  float:right;
+  padding: 5px;
+  width: 40%;
+  margin-left:15px;
+}
+
+.left{
+  float:left;
+  width:50%;
+  padding: 3px;
+  height: 60px;
+  margin-left: 5px;
+  font-size: 18px;
+  background: #FF7F50;
+  background:linear-gradient(to right, #FF7F50 0%, #ffffff 55%);
+}
+
+.right{
+  float:right;
+  padding: 5px;
+  width:50%;
+  height: 60px;
+}
+
+.searchleft{
+  float:left;
+  padding: 5px;
+  width:50%;
+  height: 60px;
+}
+
+.searchLt{
+	position: relative;
+    width: 200px;
+    height: 30px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.searchRt{
+	position: relative;
+    width: 200px;
+    height: 30px;
+	float:right;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.notification{
+  background-color: rgb(252,238,228);
+  padding: 12px;
+  font-size: 15px;
+  
+}
+
+.notificationHead{
+	text-align: center;
+	background: #dddddd;
+	background:linear-gradient(to right, #dddddd 0%, #ffffff 100%);
+	padding: 6px 12px;
+}
+
+#genericText {
+	font-size: 14px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+  border: 2px solid #FFA500;
+}
+
+/* The Close Button */
+.close{
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  //font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hrDoc{
+	margin:10px;
+	background-color:#fff2e5;
+	height:60px;
+	width:100%;
+    border: 3px solid #888;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+    border: 1px solid #FFA500;
+}
+
+.accordion {
+  background-color: #A9A9A9;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius:10px;
+}
+
+.active, .accordion:hover {
+  background-color: #FF7F50;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.activities{
+	background-color: #E0E0E0;
+	width: 100%;
+	float:left;
+	margin-top: 20px;
+}
+
+.interest{
+	padding:67px 30px;
+	border-radius: 0 50% 50% 0;
+	background-color: #FF8C00;
+	color: white;
+	float:left;
+	margin-right:20px;
+}
+
+.posts{
+	background: white;
+	border-radius: 10px;
+	box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+	float:left;
+	width: 35%;
+	padding: 0 15px;
+	margin: 30px 20px;
+}
+
+.postHead{
+	color: #FFAE19;
+}
+
+.popupContent{
+	padding-top: 20px;
+}
+
+.docHead{
+	margin-left: 10px;
+}
+
+.feedbackExp a{opacity: 0.8;}
+.feedbackExp a.selected, .feedbackExp a:hover{opacity: 1;}
+
+.socialBtns button{
+border:0;
+background:#ddd;
+border-radius: 5px;
+padding:7px 20px;
+color:#fff;
+}
+.feedbackInput{
+margin:20px 0;
+}
+.feedbackInput textarea{
+width:100%; border-radius: 5px; clear: both;}
+.feedbackInput .submitBtn{
+border:0;
+background:#ddd;
+border-radius: 5px;
+padding:7px 20px; margin-top:10px;
+color:white;}
+
+.thankYou, .feedbackOption{
+	border-radius: 10px;
+	border: 1px  solid #ebebeb;
+	padding: 30px;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+.portals{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.portal{
+	background: white;
+	border-radius: 10px;
+	box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+	float:left;
+	width: 15%;
+	height: 150px;
+	padding: 0 15px;
+	margin: 30px 20px;
+}
+
+.businessUnits{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.businessUnits a.unitLink{
+	background: white;
+	border-radius: 10px;
+	box-shadow: -1px 1px 4px rgba(0,0,0,0.2);
+	padding: 15px;
+	margin: 5px;
+    border: 1px solid #ddd;
+	text-align: center;
+	color: #e67e00;
+	min-width: 150px;
+	display: inline-block;
+}
+
+.leaderText{
+	text-align: justify; 
+	-moz-text-align-last: right; 
+	text-align-last: right;
+	font-size: 20px;
+}
+
+.course{
+	background: white;
+	border-radius: 10px;
+	width: 100%;
+    border: 1px solid #FFA500;
+	padding: 15px 15px 6px;
+	box-sizing: border-box;
+	float: left;
+	margin: 10px 0;
+}
+
+.part{
+	float:left;
+	width: 33.33%;
+	display: table;
+}
+
+.part:nth-child(2){
+	padding-left: 50px;
+}
+
+.part button{ border: 0; color: #FFF;}
+
+.aboutYou{
+	float: left;
+}
